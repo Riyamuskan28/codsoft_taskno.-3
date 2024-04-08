@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+  
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+         <form>
+         <div class="display">
+             <input type="text" name="show" placeholder="0" >
+            </div>
+             <div>
+                 <input type="button" value="C"  onclick="show.value= '' " class="top" >
+                 <input type="button" value="%"  onclick="show.value+= '%' " class="top" >
+                 <input type="button" value="Del"  onclick="show.value= show.value.toString().slice(0,-1) " class="top" >
+                 <input type="button" value="/"  onclick="show.value+= '/' " class="top" class="top"  >
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="show.value+= '7' " class="btn" >
+                    <input type="button" value="8" onclick="show.value+= '8' " class="btn" >
+                    <input type="button" value="9" onclick="show.value+= '9' " class="btn" >
+                    <input type="button" value="*"  onclick="show.value+= '*' " class="top" >
+                   </div>
+                   <div>
+                    <input type="button" value="4" onclick="show.value+= '4' " class="btn" >
+                    <input type="button" value="5" onclick="show.value+= '5' " class="btn" >
+                    <input type="button" value="6" onclick="show.value+= '6' " class="btn" >
+                    <input type="button" value="-"  onclick="show.value+= '-' " class="top" >
+                   </div>
+                   <div>
+                    <input type="button" value="1" onclick="show.value+= '1' " class="btn" >
+                    <input type="button" value="2" onclick="show.value+= '2' " class="btn" >
+                    <input type="button" value="3" onclick="show.value+= '3' " class="btn" >
+                    <input type="button" value="+"  onclick="show.value+= '+' "class="top" >
+                   </div>
+                   <div>
+                    <input type="button" value="00"  onclick="show.value+= '00' "  class="btn" >
+                    <input type="button" value="0"  onclick="show.value+= '0' " class="btn" >
+                    <input type="button" value="."  onclick="show.value+= '.' " class="btn" >
+                    <input type="button" value="=" onclick="show.value= eval(show.value)"  class="equal">
+                   </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
